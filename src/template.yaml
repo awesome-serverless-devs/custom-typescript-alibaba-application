@@ -1,0 +1,22 @@
+MyFunctionDemo:
+  Component: fc
+  Provider: alibaba
+  Properties:
+    Region: cn-hangzhou
+    Service:
+      Name: custom-runtime-demo
+    Function:
+      Name: custom-typescript
+      CodeUri:
+        Src: ./
+        Excludes:
+          - ./.s
+          - ./README.md
+          - ./template.yaml
+          - ./package.json
+          - ./package-lock.json
+      CAPort: 9000
+      Handler: index.handler
+      MemorySize: 512
+      Runtime: custom
+      Timeout: 60
