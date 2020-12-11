@@ -4,7 +4,7 @@ You can quickly experience Typescript on Alibaba Cloud function computing servic
 
 - Initialization project: ` s init custom-typescript -p alibaba`
 - Enter project: `cd custom-typescript
-- Install dependencies：`s install docker -f ./fcfile``
+- Install dependencies：`s install docker -f ./fcfile`
 - Deployment project: `s deploy`
 - Invoke project：`s invoke remote`
 
